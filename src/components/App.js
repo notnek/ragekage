@@ -48,6 +48,8 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route component={NotFound} />
           </Switch>
+
+          <div className="app__footer">Made by <a href="https://kenton.glass">Kenton</a></div>
         </div>
       </BrowserRouter>
     );

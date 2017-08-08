@@ -22,12 +22,11 @@ ul {
 
 a {
   color: $c-primary;
-  text-decoration: underline;
+  text-decoration: none
 }
 
 a:hover {
   color: $c-default;
-  text-decoration: none;
 }
 
 img {
@@ -139,3 +138,9 @@ img {
     }
   }
 }
+
+.app__footer {
+  font-size: 0.75rem;
+  text-align: center;
+}
+

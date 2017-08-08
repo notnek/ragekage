@@ -20,9 +20,10 @@ class Image extends Component {
 
   render() {
     return (
-      <li style={{backgroundImage: `url(${process.env.PUBLIC_URL}/${this.props.url})`}}>
-        <CopyToClipboard text={`${process.env.PUBLIC_URL}/${this.props.url}`} onCopy={this.onCopy}>
-          <span><span>{ this.state.copied ? "Copied!" : "Copy Image URL" }</span></span>
+      <li>
+        <a href={`${window.location}${this.props.url}`} target="_blank">{this.props.url}</a> 
+        <CopyToClipboard text={`${window.location}${this.props.url}`} onCopy={this.onCopy}>
+          <span className="copy" title="Click to copy image URL">{ this.state.copied ? "Copied" : "Copy URL" }</span>
         </CopyToClipboard>
       </li>
     );

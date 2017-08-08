@@ -49,7 +49,7 @@ class App extends Component {
             <Route component={NotFound} />
           </Switch>
 
-          <div className="app__footer">Made by <a href="https://kenton.glass">Kenton</a></div>
+          <div className="app__footer">Compliments of <a href="https://kenton.glass">Kenton</a></div>
         </div>
       </BrowserRouter>
     );

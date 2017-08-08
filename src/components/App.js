@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import ReactGA from 'react-ga';
 import fuzzy from 'fuzzy';
 
 import images from '../data/images';
 
 import Home from './Home';
 import NotFound from './NotFound';
-
-ReactGA.initialize('UA-20333926-13');
 
 class App extends Component {
   constructor() {

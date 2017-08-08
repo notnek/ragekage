@@ -1,1 +1,14 @@
-// settings for scss go here
+// Colors
+// -------------------------------------------------------
+$c-default: #333333;
+$c-primary: #1A72AA;
+$c-light: #DDDDDD;
+
+// Breakpoints
+// -------------------------------------------------------
+$breakpoint-wide-handhelds-min:       420px;
+$breakpoint-wide-handhelds-max:       599px;
+$breakpoint-tablets-min:              600px;
+$breakpoint-tablets-max:              800px;
+$breakpoint-desktops-min:             801px;
+$content-width-desktops:              1080px;

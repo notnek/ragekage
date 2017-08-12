@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="app">
-          <div className="app__name"><span>Rage Kage</span> A collection of animated gifs.</div>
+          <div className="app__name"><span>Rage Kage</span>, a collection of animated gifs.</div>
 
           <Switch>
             <Route exact path="/" render={() => <Home hasResults={this.state.hasResults} images={this.state.images} handleSearch={this.handleSearch} />} />

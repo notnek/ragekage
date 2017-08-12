@@ -47,10 +47,10 @@ a:hover {
 }
 
 .app {
-  margin: 1em auto;
-  max-width: 80%;
+  margin: 1em;
 
   @include r(desktops) {
+    max-width: 80%;
     margin: 4em auto;
   }
 }

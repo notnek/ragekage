@@ -161,6 +161,7 @@ module.exports = [
   'uhh.gif',
   'unsure.gif',
   'vibes.gif',
+  'victory-royale.gif',
   'waiting.gif',
   'wake-up.gif',
   'walter-wink.gif',

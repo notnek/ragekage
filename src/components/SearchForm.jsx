@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class SearchForm extends Component {
-  constructor() {
-    super();
+  static propTypes = {
+    handleSearch: PropTypes.func.isRequired,
+  };
 
-    this.state = {
-      query: 'hey',
-    };
+  state = {
+    query: '',
   }
 
   onSubmit = (e) => {
     e.preventDefault();
   }
-  
-  onChange = (e) => {
-    let query = e.target.value;
 
-    this.setState({ query: query }, this.performSearch);
+  onChange = (e) => {
+    const query = e.target.value;
+
+    this.setState({ query }, this.performSearch);
   }
 
   performSearch = () => {

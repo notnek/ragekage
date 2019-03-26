@@ -31,6 +31,7 @@ module.exports = [
   'clubbing.gif',
   'combover.gif',
   'contemplating.gif',
+  'cool.gif',
   'cooler.gif',
   'crazy-eyes.gif',
   'css.gif',

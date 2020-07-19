@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  ul li:before {
+    content: "-";
+    @apply inline-block mr-2;
+  }
+}
+
+a {
+  @apply text-blue-700;
+
+  @screen dark-mode {
+    @apply text-blue-300;
+  }
+
+  &:hover {
+    @apply underline;
+  }
+}
+
+h1 {
+  @apply text-3xl leading-tight mb-4 font-bold;
+
+  @screen md {
+    @apply text-4xl;
+  }
+
+  span {
+    @apply font-normal;
+  }
+}
+
+@tailwind utilities;

@@ -1,74 +1,61 @@
+const color = '#2B6CB0';
+const siteTitle = 'Rage Kage, a collection of animated gifs';
+const siteDescription = 'A collection of animated gifs curated by Kenton Glass';
 
 export default {
-  /*
-  ** Nuxt rendering mode
-  ** See https://nuxtjs.org/api/configuration-mode
-  */
   mode: 'universal',
-  /*
-  ** Nuxt target
-  ** See https://nuxtjs.org/api/configuration-target
-  */
   target: 'static',
-  /*
-  ** Headers of the page
-  ** See https://nuxtjs.org/api/configuration-head
-  */
+  components: true,
+  loading: {
+    color,
+  },
+  generate: {
+    fallback: true,
+  },
   head: {
-    title: process.env.npm_package_name || '',
+    title: siteTitle,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: siteDescription,
+      },
+      { hid: 'og:title', property: 'og:title', content: siteTitle },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: siteDescription,
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: siteTitle,
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: siteDescription,
+      },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      { rel: 'mask-icon', href: '/pinned-tab.svg', color },
+    ],
   },
-  /*
-  ** Global CSS
-  */
-  css: [
-  ],
-  /*
-  ** Plugins to load before mounting the App
-  ** https://nuxtjs.org/guide/plugins
-  */
-  plugins: [
-  ],
-  /*
-  ** Auto import components
-  ** See https://nuxtjs.org/api/configuration-components
-  */
-  components: true,
-  /*
-  ** Nuxt.js dev-modules
-  */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    '@nuxtjs/pwa',
-    // Doc: https://github.com/nuxt/content
-    '@nuxt/content',
-  ],
-  /*
-  ** Content module configuration
-  ** See https://content.nuxtjs.org/configuration
-  */
-  content: {},
-  /*
-  ** Build configuration
-  ** See https://nuxtjs.org/api/configuration-build/
-  */
+  modules: ['@nuxt/content'],
   build: {
-  }
-}
+    postcss: {
+      plugins: {
+        'postcss-nested': {},
+        'postcss-import': {},
+      },
+    },
+  },
+};

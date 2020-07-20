@@ -21,8 +21,8 @@ export default {
   },
   head() {
     const title = this.is404
-      ? '404, page not found | Kenton Glass'
-      : 'Error | Kenton Glass';
+      ? '404, page not found | Rage Kage'
+      : 'Error | Rage Kage';
 
     return {
       titleTemplate: title,

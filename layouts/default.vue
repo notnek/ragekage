@@ -1,5 +1,6 @@
 <template>
   <div class="max-w-2xl mx-auto">
+    <site-header />
     <nuxt />
   </div>
 </template>

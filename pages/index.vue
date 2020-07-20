@@ -7,7 +7,7 @@
       Curated by
       <a href="https://kenton.glass" target="_blank" rel="noopener">
         Kenton Glass
-      </a>
+      </a>.
     </footer>
   </main>
 </template>

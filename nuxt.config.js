@@ -1,4 +1,3 @@
-const color = '#2B6CB0';
 const siteTitle = 'Rage Kage, a collection of animated gifs';
 const siteDescription = 'A collection of animated gifs curated by Kenton Glass';
 
@@ -6,9 +5,7 @@ export default {
   mode: 'universal',
   target: 'static',
   components: true,
-  loading: {
-    color,
-  },
+  loading: '~/components/LoadingIndicator.vue',
   generate: {
     fallback: true,
   },
@@ -41,7 +38,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-      { rel: 'mask-icon', href: '/pinned-tab.svg', color },
+      { rel: 'mask-icon', href: '/pinned-tab.svg', color: '#2B6CB0' },
     ],
   },
   buildModules: [

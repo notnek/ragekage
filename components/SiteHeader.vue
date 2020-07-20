@@ -5,8 +5,7 @@
         class="text-gray-900 dark-mode:text-gray-100 hover:no-underline"
         to="/"
       >
-        Rage Kage
-        <span class="font-normal">, a collection of animated gifs</span>
+        Rage Kage<!-- prettier-ignore --><span class="font-normal">, a collection of animated gifs</span>
       </nuxt-link>
     </component>
   </header>

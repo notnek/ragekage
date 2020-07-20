@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="loading"
-    class="rounded-full w-6 h-6 absolute top-6 right-6 border-solid border-gray-500 border-2 after:rounded-full after:w-6 after:h-6"
+    class="fixed w-6 h-6 border-2 border-gray-400 border-solid rounded-full dark-mode:border-gray-600 top-6 right-6 after:rounded-full after:w-6 after:h-6"
   />
 </template>
 

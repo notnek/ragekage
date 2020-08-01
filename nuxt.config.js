@@ -45,8 +45,13 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
+    'nuxt-ackee',
   ],
   modules: ['@nuxt/content'],
+  ackee: {
+    server: 'https://stats.ragekage.com',
+    domainId: '5ffdac7c-ce85-47e0-a380-2167775783f4',
+  },
   build: {
     postcss: {
       plugins: {

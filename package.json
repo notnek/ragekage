@@ -43,7 +43,7 @@
     "nuxt-ackee": "^1.0.1",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.1",
-    "prettier": "^2.0.5",
+    "prettier": "^2.2.1",
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",

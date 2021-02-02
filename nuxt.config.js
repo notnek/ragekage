@@ -2,7 +2,6 @@ const siteTitle = 'Rage Kage, a collection of animated gifs';
 const siteDescription = 'A collection of animated gifs curated by Kenton Glass';
 
 export default {
-  mode: 'universal',
   target: 'static',
   components: true,
   loading: '~/components/LoadingIndicator.vue',
